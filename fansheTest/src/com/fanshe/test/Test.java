@@ -1,11 +1,19 @@
 package com.fanshe.test;
 
-public class Test {
+import java.io.StringWriter;
+import java.util.LinkedList;
 
+
+public class Test {
+	private static final LinkedList<String> tranInfoList = new LinkedList<String>();
+	
 	public static void main(String[] args) {
-		double amount = ExcludeTax(10000,10,1);
-		System.out.println(amount);
-		System.out.println(exec(10000,10,1));
+		
+		tranInfoList.add("1");
+		tranInfoList.add("2");
+		tranInfoList.add("3");
+		
+		System.out.println(tranInfoList.poll());
 	}
 	
 	/**
